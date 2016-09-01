@@ -1,0 +1,376 @@
+@charset "utf-8"
+*,body{
+	padding: 0;
+	margin: 0;
+	
+}
+
+body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+
+	width: 794px;
+	height: 1090px;
+}
+
+
+div.resume{
+	width: 794px;
+	height: 1090px;
+	min-width: 794px;
+	min-height: 1090px;
+	background-color: #EEE;
+	box-shadow: 12px 12px 10px #C0C0C0;
+}
+
+div.leftBar{
+	width: 18px;
+	height: 100%;
+	float: left;
+	background-color: rgba(40,138,201,128);
+}
+
+div.leftSide{
+	width: 240px;
+	height: 100%;
+	float: left;
+	background-color: rgba(239,239,239,128);
+}
+
+div.rightSide{
+	width: 536px;
+    height: 100%;
+    float: left;
+    padding: 20px 0 20px 40px;
+    background-color: rgba(255,255,255,128);
+    box-sizing: border-box;
+}
+
+div.portraitZone{
+	width: 100%;
+	height: 320px;
+
+	padding: 30px 0 0;
+
+	background-color: rgba(226,226,226,128);
+}
+
+div.summaryZone{
+	width: 100%;
+	height: 770px;
+}
+
+div.portraitPlane{
+	margin: 0 auto 0;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border-color: white;
+    border: solid 4px white;
+    position: relative;
+}
+
+div.portraitPlane > img.portraitImage{
+	width: 94%;
+    height: auto;
+    position: absolute;
+    top: -24px;
+    left: 4px;
+
+}
+
+div.portraitZone > div.name{
+	width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    font-smooth: always;
+    font-weight: bold;
+    color: rgba(68,68,68,128);
+    margin: 20px auto 0;
+}
+
+div.portraitZone > div.school{
+	width: 100%;
+	text-align: center;
+    font-size: medium;
+    color: rgba(127,127,127,128);
+    margin: 12px auto 0;
+}
+
+ul.infoUl{
+	list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+ul.infoUl > li{
+	width: 100%;
+	line-height: 30px;
+}
+
+span.icon{
+	width: 28px;
+    height: 28px;
+    margin: 5px 0;
+    display: inline-block;
+    text-align: center;
+    background: #288ac9;
+    border-radius: 100%;
+}
+
+span.icon > i{
+	font-size: medium;
+	color: white;
+}
+
+ul.infoUl > li > span.info{
+    margin: 0;
+    padding: 0;
+    text-indent: 0.5em;
+    color: rgba(127,127,127,255);
+    display: inline-block;
+}
+
+ul.infoUl > li > span.infoLabel{
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+
+div.separateLine{
+	border: 1px solid #c9c9c9;
+    margin: 0 2em;
+    box-shadow: 1px 0px 2px #c9c9c9;
+    clear: both;
+}
+
+ul.infoUl > li > span > a{
+	text-decoration: none;
+	color: rgba(127,127,127,255);
+}
+
+div.sectionHead{
+    text-align: center;
+}
+
+div.sectionHead span.icon{
+	width: 48px;
+	height: 48px;
+}
+
+div.sectionHead > span.icon > i{
+	font-size: x-large;
+    margin-top: 12px;
+}
+
+div.sectionHead > span.title{
+    font-size: large;
+    vertical-align: super;
+    font-weight: bold;
+}
+
+div.score{
+	display: inline-block;
+    margin-left: 10px;
+    float: right;
+    margin-top: 10px;
+}
+
+div.scoreValue{
+	display: inline-block;
+    margin-left: 20px;
+	text-align: left;
+}
+
+div.score span.point{
+	width: 10px;
+    height: 10px;
+    background-color: #b5b5b5;
+    display: block;
+    float: left;
+    border-radius: 100%;
+    margin: auto 5px;
+}
+
+div.score span.rightPoint{
+	background-color: #288ac9;
+}
+
+div.evaluationInfo{
+	text-indent: 2em;
+	color: rgba(127,127,127,255);
+	margin: 10px;
+}
+
+div.rightSide > div.sectionHead{
+	text-align: left;
+}
+
+div.sectionHead div.suffixLine{
+	display: inline-block;
+    border: 1px solid #c9c9c9;
+    margin: 0 0 10px 2em;
+    box-shadow: 1px 0px 2px #c9c9c9;
+    width: 338px;
+}
+
+div.items>ul.infoUl>li{
+	line-height: 2em;
+}
+
+div.item > div.itemLeft{
+	clear: both;
+	float: left;
+	width: 140px;
+}
+
+div.item > div.itemRight{
+	float: left;
+	width: 336px;;
+}
+
+div.itemLeft > div.position{
+	color: #288ac9;
+    font-weight: bold;
+}
+
+div.itemRight > div.company{
+	font-weight: bold;
+}
+
+div.timeLineZone{
+	padding: 12px 0 46px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin: 40px auto;
+}
+
+div.timeLine{
+	width: 408px;
+    margin: 0 12px 0;
+    box-sizing: border-box;
+    border: solid 1px #288ac9;
+    position: absolute;
+    top: 50%;
+}
+
+div.timeLineZone > div.timeMetrics{
+	clear: both;
+	position: absolute;
+    top:  44%;
+}
+
+div.timeLineZone > div.timeMetrics > span.point{
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	float: left;
+	display: inline-block;
+
+	margin: auto 7px;
+
+	background-color: #288ac9;
+}
+
+
+div.timeEvents{
+	position: relative;
+}
+
+div.timeEvents div.timeEvent{
+	position: absolute;
+
+	/*border: 2px solid white;*/
+	background-color: #288ac9;
+	padding: 10px;
+
+	border-radius: 10px;
+}
+
+div.timeEvent{
+	color: white;
+}
+
+div.timeEvent > div.school{
+	font-weight: bold;
+}
+
+
+div.timeEvent > div.arrow{
+	position: absolute;
+	color: #288ac9;
+    border-top: 20px solid #288ac9;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+
+div.timeEvents div.highSchool{
+	top: -54px;
+    left: 176px;
+	padding-bottom: 14px;
+}
+div.timeEvents > div.highSchool > div.arrow{
+    left: 32px;
+    top: 44px;
+}
+
+div.timeEvents > div.university{
+	top: 32px;
+	left: 240px;
+}
+
+div.timeEvents > div.university > div.arrow{
+	top: -8px;
+    left: 38px;
+
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); 	/* IE 9 */
+	-moz-transform:rotate(180deg); 	/* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+	-o-transform:rotate(180deg); 	/* Opera */
+}
+
+div.timeEvents > div.graduate{
+	top: -62px;
+    left: 304px;
+}
+
+div.timeEvents > div.graduate > div.arrow{
+	left: 70px;
+    top: 54px;
+}
+
+div.awardZone > div.items > ul.infoUl > li{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+div.award{
+	font-weight: bold;
+}
+
+div.printButtonZone {
+	width: 80%;
+	margin: 0 auto;
+
+	text-align: center;
+}
+
+div.printButtonZone > a{
+	text-decoration: none;
+	color: black;
+
+	font-weight: bold;
+	font-size: large;
+}
+
+div.printButtonZone > a > i{
+	font-weight: bold;
+	font-size: xx-large;
+	color: black;
+	margin: 0 20px 0 0;
+}
