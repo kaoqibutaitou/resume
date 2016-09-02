@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>李秋云【简历】</title>
-	<link href="css/font-awesome-4.6.3/css/font-awesome.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/index.css" type="text/css">
-	<link rel="stylesheet" href="css/printIndex.css" media="printer" type="text/css">
+	<link href="css/font-awesome-4.6.3/css/font-awesome.css" rel="stylesheet" media="all">
+	<!-- <link rel="stylesheet" type="text/css" href="css/index.css" media="screen"> -->
+	<link rel="stylesheet" type="text/css" href="css/all.css" media="all">
 	<script src="js/jquery-2.1.0.js" type="text/JavaScript" language="javascript"></script>
 	<script src="js/jquery.PrintArea.js" type="text/JavaScript" language="javascript"></script>
 	<script src="js/index.js"></script>
@@ -96,7 +96,7 @@
 								<span class="point"></span>
 							</div></li>
 
-						<li><span class="infoLabel">OFFICE :</span><div class="score">
+						<li><span class="infoLabel">Office :</span><div class="score">
 								<span class="point rightPoint"></span>
 								<span class="point rightPoint"></span>
 								<span class="point rightPoint"></span>
@@ -115,11 +115,17 @@
 					<span class="title">个人评价</span>
 					</div>
 					<div class="evaluationInfo">
-						诚实守信，认真踏实，热爱生活，热爱自然。
+						<ul>
+							<li><i class="fa fa-check" aria-hidden="true"></i>诚实守信。</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i>认真踏实。</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i>互帮互助，团结友爱。</li>
+							<li><i class="fa fa-check" aria-hidden="true"></i>热爱生活，热爱自然。</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="middleBar"></div>
 		<div class="rightSide">
 			
 			<div class="sectionHead">
@@ -354,6 +360,8 @@
 					</ul>
 				</div>
 			</div>
+
+			<div class="clearBoth"></div>
 		</div>
 	</div>
 
@@ -381,7 +389,9 @@
 				// $(document).find("link").filter(function() {
 				// 	return $(this).attr("rel").toLowerCase() == "stylesheet";
 				// }).each(function() {
-				// 	printCss = printCss + '<link type="text/css" rel="stylesheet" href="' + $(this).attr("href") + '" >';
+				// 	if ($(this).attr("media")=="print") {
+				// 		aprintCss = printCss + '<link type="text/css" rel="stylesheet" href="' + $(this).attr("href") + '" >';
+				// 	}
 				// });
 
 				// var printContent = '<div class="' + $(ele).attr("class") + '">' + $(ele).html() + '</div>';
